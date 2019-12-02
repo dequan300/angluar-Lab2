@@ -11,11 +11,10 @@ import { PostComponent } from "./post/post.component";
   declarations: [
     AppComponent,
     SocailPostsComponent,
-    PostFormComponent,
     PostComponent,
-    FormsModule
+    PostFormComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

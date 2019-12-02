@@ -1,10 +1,10 @@
 <form class="container" (ngSubmit)="onSubmit()">
     <div class="input">
-        <label>Title: <input type="text" [(ngModle)]=""placeholder="write here" name="title"></label>
+        <label>Title: <input type="text" [(ngModle)]="newPost.title"placeholder="write here" name="title"></label>
 
     </div>
     <div class="input">
-        <label> Thoughts: <input type="text" placeholder="wriet here" name="thoughts"></label>
+        <label> Thoughts: <textarea [(ngModle)]="newPost.thought"  name="thoughts"cols="30" rows="10"></textarea></label>
     </div>
-
+    <button>Add Post</button>
 </form>

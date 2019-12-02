@@ -1,7 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { Post } from "../post";
-import { Title } from "@angular/platform-browser";
-import { post } from "selenium-webdriver/http";
 
 @Component({
   selector: "app-socail-posts",

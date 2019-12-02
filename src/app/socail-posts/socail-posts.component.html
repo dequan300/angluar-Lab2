@@ -1,10 +1,6 @@
-<div class="container1">
-    <h1>{{firstName}}</h1>
-</div>
-<div class="container2">
-    <ul>
-        <li *ngFor="let post of listOfPost">
-            {{post.title}} - {{post.title}}
-        </li>
-    </ul>
-</div>
+<button type="button"> New Thought</button>
+
+<section>
+    <app-post *ngFor="let post of listOfPost ;index as i" [post]=post (deleted)="onDelete(i)"></app-post>
+</section>
+<app-post-form (submitted)="onSubmit($event)"></app-post-form>
