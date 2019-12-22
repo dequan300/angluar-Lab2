@@ -23,7 +23,7 @@ export class SocailPostsComponent implements OnInit {
     this.listOfPost.push(newpost);
   }
   onDelete(index) {
-    this.listOfPost.splice(index[1]);
+    this.listOfPost.splice(index, 1);
   }
   constructor() {}
 
